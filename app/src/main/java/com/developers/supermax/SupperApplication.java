@@ -55,7 +55,7 @@ public class SupperApplication extends QsApplication{
 
         AutoSizeConfig.getInstance().getUnitsManager()
                 .setSupportDP(false)
-                .setSupportSubunits(Subunits.IN);
+                .setSupportSubunits(Subunits.MM);
     }
 
 
