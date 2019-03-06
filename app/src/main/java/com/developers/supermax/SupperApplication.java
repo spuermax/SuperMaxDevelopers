@@ -5,6 +5,10 @@ import com.squareup.leakcanary.RefWatcher;
 import com.supermax.base.QsApplication;
 import com.supermax.base.common.http.HttpBuilder;
 
+import me.jessyan.autosize.AutoSize;
+import me.jessyan.autosize.AutoSizeConfig;
+import me.jessyan.autosize.unit.Subunits;
+
 /**
  * @Author yinzh
  * @Date 2019/3/5 15:39
@@ -22,6 +26,9 @@ public class SupperApplication extends QsApplication{
         }
 
         refWatcher = LeakCanary.install(this);
+
+
+        configUnits();
     }
 
 
@@ -38,6 +45,17 @@ public class SupperApplication extends QsApplication{
     @Override
     public void initHttpAdapter(HttpBuilder builder) throws Exception {
 
+    }
+
+
+    /**
+     * 屏幕适配
+     */
+    private void configUnits(){
+
+        AutoSizeConfig.getInstance().getUnitsManager()
+                .setSupportDP(false)
+                .setSupportSubunits(Subunits.IN);
     }
 
 

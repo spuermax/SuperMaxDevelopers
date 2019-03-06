@@ -37,5 +37,11 @@ dependencies {
      */
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
 
+    /**
+     * 屏幕适配方案
+     */
+    implementation 'me.jessyan:autosize:1.1.2'
+
+
 
 }
