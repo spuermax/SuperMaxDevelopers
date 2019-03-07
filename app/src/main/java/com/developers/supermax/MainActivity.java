@@ -17,7 +17,7 @@ public class MainActivity extends QsActivity implements CustomAdapt{
      */
     @Override
     public boolean isBaseOnWidth() {
-        return false;
+        return true;
     }
 
 
@@ -35,7 +35,7 @@ public class MainActivity extends QsActivity implements CustomAdapt{
      */
     @Override
     public float getSizeInDp() {
-        return 1334;
+        return 375;
     }
 
     @Override
